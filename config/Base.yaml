@@ -1,0 +1,39 @@
+###### Model
+# model: 'resnet34'
+model: 'resnet50'
+
+# 'resnet50': pretrainedResNet,
+#         'mobile1': pretrainedMobileNetLarge,
+#         'mobile2': pretrainedMobileLowRes,
+#         'fine tune': fine_tuning
+#'fine tune'  
+#'pretrained'
+
+
+classes: 5
+trainstat: 1
+###### Paths
+post_fix: '3' # Change when running hyperparm experiments
+# "person","truck", "motorcycle", "bus"]
+
+class_type: ["car"]
+class_ids: [] # Automatically populates on Runtime!
+# scanner: ["car","truck", "motorcycle", "bus"]
+scanner: ["car","person","truck", "motorcycle", "bus"]
+
+###### Application Specific ######
+dataset: 'COCO'
+# optim_method: 'SGD' # options: SGD, AdaM, RMSProp,
+# lr_scheduler: 'StepLR' # options: StepLR, CosineAnnealingWarmRestarts, OneCycleLR
+datapath: "/Users/samirkhaki/fiftyone/coco-2017/"
+
+### Number of times to run full_train ###
+train_num: 0 #only used if > 0
+
+
+###### Suggested Tune ######
+init_lr: 0.03
+init_lr_full: 0.1
+beta: 0.8
+beta_full: 0.95
+

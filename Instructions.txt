@@ -1,0 +1,12 @@
+First Time: git clone https://github.com/Skhaki18/APS360.git
+
+Ongoing:
+
+    git pull
+
+    git add . #Adds all files
+    git add main.py #Adds Specefic Files - Preferred
+    
+    git commit -m "MESSAGE"
+
+    git push

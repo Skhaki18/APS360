@@ -1,0 +1,4 @@
+This is partically imporeted from the ENGINE program with pytorch to help accelerte
+metric tracking and training procedured. Some of the code was changed to adapt our needs but we
+acknowledge large overlap with the ENGINE base code repo. We did ammend the procedures for fine
+tuning procedure as seen in training cycles.
